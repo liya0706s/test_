@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="Zh-Hant">
+    <!-- 自動轉跳到以下位址 -->
+<meta http-equiv="refresh" content="0;url=http://10.66.10.29/eoffice/server/public/cas/login.php" />
+<head>
+  <meta charset="utf-8">
+  <title>內部官網 SF-Intranet</title>
+  <meta name="keywords" content="office web">
+  <meta name="description" content="SFTW">
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="pic\logo\SF.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="pic\logo\SF.ico" type="image/x-icon">
+</head>
+
+    <div id="footer">
+
+      <!--FOOTER 開始-->
+    
+      <script>
+        window.onload = function() {
+            // openPopup('http://10.66.10.29/eoffice/server/adimg/EOAAD.png');
+            openPopup('popup.html');
+
+        };
+        
+        // function openPopup(url) {
+        //     var popup = window.open(url, 'popupWindow', 'width=1000,height=500');
+        //     if (popup) {
+        //         popup.focus();
+        //     } else {
+        //         alert('彈出式窗口被瀏覽器阻止。請允許彈出式窗口或檢查瀏覽器設置。');
+        //     }
+        // }
+
+        function openPopup(url) {
+    var width = 1000;
+    var height = 800;
+    //   var width = 500;
+    // var height = 800;
+    
+    // 獲取父視窗的尺寸
+    var parentWidth = window.innerWidth;
+    var parentHeight = window.innerHeight;
+    
+    // 計算彈出視窗的位置
+    var left = (parentWidth / 2) - (width / 2);
+    var top = (parentHeight / 2) - (height / 2);
+    
+    // 打開彈出視窗
+    var popup = window.open(
+        url, 
+        'popupWindow', 
+        `width=${width},height=${height},left=${left},top=${top}`
+    );
+    
+    if (popup) {
+        popup.focus();
+    } else {
+        alert('彈出式窗口被瀏覽器阻止。請允許彈出式窗口或檢查瀏覽器設置。');
+    }
+}
+
+        </script>
+      
+
+  </div>
+</body>
+
+</html>

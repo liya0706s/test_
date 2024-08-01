@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="Zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>彈出視窗</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translate(100%, 0);
+      }
+      100% {
+        transform: translate(-100%, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee">
+    <p>這是一個跑馬燈文字！</p>
+  </div>
+  <img src="http://10.66.10.29/eoffice/server/adimg/空運大貨商機競賽點部宣傳海報_1.jpg" alt="宣傳海報">
+</body>
+</html>
